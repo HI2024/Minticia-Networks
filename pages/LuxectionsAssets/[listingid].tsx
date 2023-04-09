@@ -3,15 +3,15 @@ import { BigNumber } from "ethers";
 import { useRouter } from "next/router";
 import Header from "@/components/Header";
 import { MediaRenderer } from "@thirdweb-dev/react";
-import { ModelViewerElement } from '@google/model-viewer/lib/model-viewer';
+// import { ModelViewerElement } from '@google/model-viewer/lib/model-viewer';
 import { useContract, useListing } from "@thirdweb-dev/react";
 import Link from "next/link";
 
-declare namespace JSX {
-    interface IntrinsicElements {
-        "model-viewer": ModelViewerElement;
-    }
-}
+// declare namespace JSX {
+//     interface IntrinsicElements {
+//         "model-viewer": ModelViewerElement;
+//     }
+// }
 
 export default function NFT() {
     const router = useRouter();
@@ -52,17 +52,17 @@ export default function NFT() {
                             <div className={"text-2xl text-white font-semibold"}>{nft?.asset?.name}</div>
                         </div>
                         <div className={"flex justify-center"}>
-                            {/* <MediaRenderer
+                            <MediaRenderer
                                 src={nft?.asset.animation_url as string}
                                 alt=""
-                            /> */}
-                            <model-viewer
+                            />
+                            {/* <model-viewer
                                 src={nft?.asset.animation_url}
                                 shadow-intensity="1"
                                 camera-controls
                                 auto-rotate
                                 ar
-                            />
+                            /> */}
                         </div>
                     </div>
 
