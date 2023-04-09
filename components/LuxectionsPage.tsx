@@ -4,7 +4,7 @@ import Image from 'next/image';
 import bannerImage from '../assets/13.webp';
 import minticiaLogo from '../assets/00.webp';
 import styles from '@/styles/nft.module.css';
-import InventoryCard from "./Cards/InventoryCard";
+import LuxectionCard from "./Cards/LuxectionCard";
 import { useActiveListings, useContract } from "@thirdweb-dev/react";
 
 const style = {
@@ -112,7 +112,7 @@ const InventoryPage = () => {
                                 return (
                                     <Link href={`/LuxectionsAssets/${nft.id}`} key={nft.assetContractAddress + nft.id}>
                                         {/* <a> */}
-                                        <InventoryCard
+                                        <LuxectionCard
                                             nft={{
                                                 name: nft.asset.name as string,
                                                 tokenUri: nft.asset.image as string,
