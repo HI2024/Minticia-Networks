@@ -2,7 +2,6 @@ import Image from "next/image";
 import { BigNumber } from "ethers";
 import { useRouter } from "next/router";
 import Header from "@/components/Header";
-import { AiOutlineClockCircle } from "react-icons/ai";
 import { MediaRenderer } from "@thirdweb-dev/react";
 import { useContract, useListing } from "@thirdweb-dev/react";
 import Link from "next/link";
