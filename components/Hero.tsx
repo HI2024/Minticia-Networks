@@ -1,10 +1,10 @@
 import React from 'react'
 import Image from 'next/image';
 import Image01 from '../assets/01.webp';
-import Image02 from '../assets/02.webp';
-import Image03 from '../assets/03.webp';
-import Image04 from '../assets/04.webp';
-import Image05 from '../assets/05.webp';
+import Image02 from '../assets/02.svg';
+import Image03 from '../assets/03.svg';
+import Image04 from '../assets/04.svg';
+// import Image05 from '../assets/05.webp';
 import Image06 from '../assets/06.webp';
 import Image07 from '../assets/07.webp';
 import Image08 from '../assets/08.webp';
@@ -65,9 +65,9 @@ const Hero = () => {
                     <div className={style.techImage}>
                         <Image src={Image04} alt='' />
                     </div>
-                    <div className={style.techImage}>
+                    {/* <div className={style.techImage}>
                         <Image src={Image05} alt='' />
-                    </div>
+                    </div> */}
                 </div>
             </div>
 
@@ -81,13 +81,13 @@ const Hero = () => {
 
                 <div className={style.copyContainer}>
                     <div className={style.title}>
-                        Built-In Analytics <br />To Track Your NFTs
+                        Upload Any Form <br />Of NFT on Minticia
                     </div>
                     <div className={style.description}>
-                        Use our built-in analytics dashboard to pull valuable <br />insights and monitor the value of your Krypto portfolio <br />over time.
+                        Upload any form of content <br />i.e. images, videos, 3d objects , files , etc...
                     </div>
                     <div className={style.butContainer}>
-                        <button className={style.accentedButton}>VIEW OUR PRICING</button>
+                        <button className={style.accentedButton}>View our INVENTORY</button>
                     </div>
                 </div>
             </div>
@@ -100,7 +100,7 @@ const Hero = () => {
                         Browse NFTS From <br />Your Smartphone
                     </div>
                     <div className={style.description}>
-                        Our crypto app is the easiest way to keep track of your <br />assets when you’re on the go.
+                        Also, you can browse your claimed NFTs on your mobile too. <br />Browse 3D listed NFTs from your mobile in AR and VR too.
                     </div>
                     <div className={style.butContainer}>
                         <button className={style.accentedButton}>Download App</button>
@@ -122,10 +122,10 @@ const Hero = () => {
 
                 <div className={style.copyContainer}>
                     <div className={style.title}>
-                        Sell Your NFTs From <br />Anywhere At Any <br />Time
+                        Browse Luxection <br />to see exclusive art <br />around the world!
                     </div>
                     <div className={style.description}>
-                        With our easy-to-use platform, you can buy or sell assets <br />from anywhere in the world, at any time.
+                        Owners can authenticate their physical art using unique ID <br />authentication system.
                     </div>
                     <div className={style.butContainer}>
                         <button className={style.accentedButton}>GET STARTED</button>
