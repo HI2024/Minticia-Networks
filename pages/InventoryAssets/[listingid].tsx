@@ -6,15 +6,15 @@ import { AiOutlineClockCircle } from "react-icons/ai";
 import { MediaRenderer } from "@thirdweb-dev/react";
 import { useContract, useListing } from "@thirdweb-dev/react";
 import Link from "next/link";
-import { ModelViewerElement } from '@google/model-viewer/lib/model-viewer';
+// import { ModelViewerElement } from '@google/model-viewer/lib/model-viewer';
 import { useAddress } from "@thirdweb-dev/react";
 import dynamic from 'next/dynamic'
 
-declare namespace JSX {
-    interface IntrinsicElements {
-        "model-viewer": ModelViewerElement;
-    }
-}
+// declare namespace JSX {
+//     interface IntrinsicElements {
+//         "model-viewer": ModelViewerElement;
+//     }
+// }
 
 const NFT = () => {
     const router = useRouter();
@@ -59,18 +59,18 @@ const NFT = () => {
                             <div className={"text-2xl text-white font-semibold"}>{nft?.asset?.name}</div>
                         </div>
                         <div className={"flex justify-center"}>
-                            {/* <MediaRenderer
+                            <MediaRenderer
                                 src={nft?.asset.animation_url as string}
                                 alt=""
-                            /> */}
+                            />
 
-                            <model-viewer
+                            {/* <model-viewer
                                 src={nft?.asset.animation_url}
                                 shadow-intensity="1"
                                 camera-controls
                                 auto-rotate
                                 ar
-                            />
+                            /> */}
                         </div>
                     </div>
 
