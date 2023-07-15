@@ -2,20 +2,20 @@ import '@/styles/globals.css'
 import { ThirdwebProvider, metamaskWallet, coinbaseWallet, walletConnect, safeWallet } from "@thirdweb-dev/react";
 import type { AppProps } from 'next/app'
 
-// const activeChain = "polygon-zkevm-testnet";
+// const activeChain = "XDC-Apothem-Network";
 const activeChain = {
-  chainId: 1442,
-  rpc: ["https://rpc.public.zkevm-test.net"],
+  chainId: 51,
+  rpc: ["https://rpc.apothem.network"],
   nativeCurrency: {
     decimals: 18,
-    name: "polygon-zkevm-testnet",
-    symbol: "ETH",
+    name: "XDC-Apothem-Network",
+    symbol: "TXDC",
   },
-  shortName: "polygon-zkevm-testnet",
-  slug: "polygon-zkevm-testnet",
+  shortName: "XDC-Apothem-Network",
+  slug: "XDC-Apothem-Network",
   testnet: true,
-  chain: "polygon-zkevm-testnet",
-  name: "Polygon zkEVM",
+  chain: "XDC-Apothem-Network",
+  name: "XDC-Apothem",
 };
 
 export default function App({ Component, pageProps }: AppProps) {
