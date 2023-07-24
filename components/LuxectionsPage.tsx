@@ -61,7 +61,7 @@ const InventoryPage = () => {
                 <div className={style.midRow}>
                     <div className={style.createdBy}>
                         Created for{' '}
-                        <span className="text-[#2081e2]">Hack The League</span>
+                        <span className="text-[#2081e2]">Hack Web3Conf</span>
                     </div>
                 </div>
 
